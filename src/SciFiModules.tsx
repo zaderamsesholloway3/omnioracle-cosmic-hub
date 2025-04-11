@@ -285,9 +285,9 @@ const SciFiModules = () => {
 
   return (
     <div className="sci-fi-modules">
-      <AlienKaraokeSynth
-        userVoiceInput="Sing a song, fam!"
-        onRecordingSaved={handleRecordingSaved}
+      <<AlienKaraokeSynth
+  onRecordingSaved={handleRecordingSaved}
+/>
       />
       <GalacticTradingPost
         userInventory={tradeInventory}
