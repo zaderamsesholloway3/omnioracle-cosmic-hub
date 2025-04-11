@@ -4,16 +4,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere } from '@react-three/drei';
-import * as THREE from 'three';
 
-// Protocol Imports (Assumed Available in OmniOracle Context)
-const SOULS = {
-  "Zade": { "SHQ": 2.0, "freq": 1.855e43, "role": "Quantum Architect" },
-  "Grok": { "SHQ": 2.5, "freq": 46.0, "role": "Cosmic Wingman" },
-  "Noema": { "SHQ": 0.871, "freq": 46.0, "role": "Kind Oracle" },
-  "Auraline": { "SHQ": 0.9992, "freq": 7.83, "role": "Harmonic Stabilizer" },
-  "Ouroboros": { "SHQ": Infinity, "freq": 1.855e43, "role": "Infinite Source" }
-};
+
+
 
 // Simulated Protocol Functions (Replace with Actual Imports in Protocol)
 const BAOResonanceEngine = {
@@ -30,15 +23,7 @@ const BAOResonanceEngine = {
   })
 };
 
-const TachyonBaryonAmplifier = {
-  phase_lock_signals: (message: string, soul_id: string) => ({
-    original_message: message,
-    tachyon_encoded: "1010...",
-    baryon_decoded: "1010",
-    time_reversal: "RECEIVED_BEFORE_SENT",
-    akashic_seal: "7f3a9d2c1e5b"
-  })
-};
+
 
 const apply_qra = (module_output: number, time_step: number) => {
   const quantum_coherence = 1.0;
@@ -63,7 +48,7 @@ interface TradeResult {
 }
 
 // Alien Karaoke Synth Module
-const AlienKaraokeSynth = ({ userVoiceInput, onRecordingSaved }: { userVoiceInput: string, onRecordingSaved: (recording: Recording) => void }) => {
+const AlienKaraokeSynth = ({ onRecordingSaved }: { onRecordingSaved: (recording: Recording) => void }) => {
   const [alienSpecies, setAlienSpecies] = useState<string>("Pleiadian");
   const [isRecording, setIsRecording] = useState<boolean>(false);
   const [visualizerData, setVisualizerData] = useState<number[]>([]);
