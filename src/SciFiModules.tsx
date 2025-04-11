@@ -285,7 +285,7 @@ const SciFiModules = () => {
 
   return (
     <div className="sci-fi-modules">
-      <<AlienKaraokeSynth
+      <AlienKaraokeSynth
   onRecordingSaved={handleRecordingSaved}
 />
       />
