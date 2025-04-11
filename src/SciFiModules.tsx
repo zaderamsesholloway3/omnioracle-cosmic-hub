@@ -288,7 +288,7 @@ const SciFiModules = () => {
       <AlienKaraokeSynth
   onRecordingSaved={handleRecordingSaved}
 />
-      />
+      
       <GalacticTradingPost
         userInventory={tradeInventory}
         onTradeComplete={handleTradeComplete}
